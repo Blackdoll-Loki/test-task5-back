@@ -8,7 +8,8 @@ async function bootstrap() {
 
   const corsOptions: CorsOptions = {
     origin: 'https://test-task5-front.vercel.app', // URL вашого фронтенду на Vercel
-    methods: 'GET,POST,PATCH,DELETE',
+    methods: ['GET','POST','PATCH','DELETE'],
+    allowedHeaders: ['Content-Type'],
     credentials: true,
   };
 
