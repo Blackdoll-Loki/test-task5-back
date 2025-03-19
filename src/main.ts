@@ -14,8 +14,6 @@ async function bootstrap() {
 
   const configService = app.get(ConfigService);
   console.log('DATABASE_URL:', configService.get('DATABASE_URL'));
-  console.log('process.env.DATABASE_URL:', process.env.DATABASE_URL);
-
 
   app.enableCors(corsOptions);
 
